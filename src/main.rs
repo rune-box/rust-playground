@@ -6,6 +6,6 @@ fn main() {
     println!("--------------------");
 
     println!("testing // arweave:");
-    arweave::test_ar();
+    arweave::test_ar(); // done@20230227
     println!("--------------------");
 }
