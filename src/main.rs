@@ -1,5 +1,11 @@
-
+use playground::{ethereum, arweave};
 
 fn main() {
-    playground::chains::eth::test_eth(); // done@20230207
+    println!("testing // ethereum:");
+    ethereum::test_eth(); // done@20230207
+    println!("--------------------");
+
+    println!("testing // arweave:");
+    arweave::test_ar();
+    println!("--------------------");
 }

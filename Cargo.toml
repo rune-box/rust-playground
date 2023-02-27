@@ -8,11 +8,15 @@ edition = "2021"
 [dependencies]
 arrayref = "0.3.6"
 generic-array = "0.14.6"
+base64 = "0.21.0"
 encoding = "0.2.33"
 hex = "0.4.3"
 bigint = "4.4.3"
+# num-bigint = { version = "0.4.3", features = ["num-bigint"] }
+# yasna = "0.5.1"
 elliptic-curve = "0.12.3"
-#sha3 = "0.9.1"
+jsonwebtoken = "8.2.0"
+jsonwebkey = { version = "0.3.5", features = ["pkcs-convert"] }
 k256 = "0.11.6"
 libsecp256k1 = "0.7.1"
 #blst = "0.3.3"
@@ -20,8 +24,9 @@ libsecp256k1 = "0.7.1"
 #forest_address = "0.3.2"
 #forest_crypto = "0.5.3"
 #crypto = "0.4.0"
+pkcs1 = { version = "0.2.4", features = ["alloc", "pem"] }
 rust-crypto = "0.2.36"
-#fastcrypto = "0.1.4"
+rsa = "0.8.1"
 serde = "1.0.152"
 serde_json = "1.0.91"
 ##

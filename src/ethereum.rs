@@ -29,7 +29,7 @@ fn hash_message(msg: &str) -> [u8; 32] {
     eth_message.extend_from_slice(msg_bytes);
 
     let hash_data = keccak256(&eth_message);
-    println!("message hash: {}", hex::encode(hash_data));
+    //println!("message hash: {}", hex::encode(hash_data));
     hash_data
 }
 
@@ -87,24 +87,26 @@ fn ecrecover_hex(msg_hash: [u8; 32], sig_hash: [u8; 65], prefix_0x: bool) -> Str
 }
 
 pub fn verify(account: &str, msg: &str, sig: &str) -> bool {
-    println!("account: {}", account);
-    println!("message: {}", msg);
-    println!("signature: {}", sig);
     let msg_bytes = hash_message(msg);
     let sig_bytes = hex::decode(sig).unwrap();
     let msg_data = arrayref::array_ref![msg_bytes, 0, 32];
     let sig_data = arrayref::array_ref![sig_bytes, 0, 65];
 
     let recovered_account = ecrecover_hex(*msg_data, *sig_data, true);
-    println!("ecrecover_hex: {}", recovered_account);
+    //println!("ecrecover_hex: {}", recovered_account);
     recovered_account.eq_ignore_ascii_case(account)
 }
 
 //#[cfg(test)]
 pub fn test_eth() {
-    println!("Hello, world!");
     let account = "0x2bA1473Cb3973C288312a92FB8930bB0aF2cAe02";
     let msg = "hello, world!";
     let sig = "a9903a32e5ca4ba2ff89644d2f128a9ffa2ca4aec21c19932e04b4a050c317e176501e809e4367e05ba017b205df5c31cb4fa72df9b6d0e48b85796f6848472b1b";
-    verify(account, msg, sig);
+
+    println!("account: {}", account);
+    println!("message: {}", msg);
+    println!("signature: {}", sig);
+
+    let r = verify(account, msg, sig);
+    println!("verify result: {}", r);
 }
