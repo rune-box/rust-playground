@@ -12,6 +12,6 @@
 | JoyID             | 📅            | 📅            |
 | Nostr             | 📅            | 📅            |
 | Polkadot / DOT    | 📅            | 📅            |
-| Solana / SOL      | 📅            | 📅            |
+| Solana / SOL      | ✅ 2023-3-31  | 📅            |
 | Stacks / STX      | 📅            | 📅            |
 | UniPass Wallet    | 📅            | 📅            |
