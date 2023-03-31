@@ -1,11 +1,24 @@
-use playground::{ethereum, arweave};
+use playground::{arweave, ethereum, solana};// polkadot, stacks
 
 fn main() {
     println!("testing // ethereum:");
-    ethereum::test_eth(); // done@20230207
+    ethereum::test(); // done@20230207
     println!("--------------------");
 
     println!("testing // arweave:");
-    arweave::test_ar(); // done@20230227
+    arweave::test(); // done@20230227
     println!("--------------------");
+
+    println!("testing // solana:");
+    solana::test(); // done@20230331
+    println!("--------------------");
+    
+    // println!("testing // polkadot:");
+    // polkadot::test(); //
+    // println!("--------------------");
+
+    // println!("testing // stacks:");
+    // stacks::test(); //
+    // println!("--------------------");
+
 }

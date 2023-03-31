@@ -60,7 +60,7 @@ pub fn verify(account: &str, public_key: &str, msg: &str, sig: &str) -> bool {
 }
 
 //#[cfg(test)]
-pub fn test_ar() {
+pub fn test() {
     let account = "VZRK_MgvH9GWeV_tP3pVI8F22PuMFuA8bAHNCTpRsOI";
     let public_key = "rnPDOXWHmJ0E1PnSYIzlrm5V1P0Aw5CDD7J10PWCJuNFGMoeozqg515UEagYD1hQE3f9HhYOaLW1rsuQVP84_PM5enqIQjnxznRKI-EAOXt1OYtWnBSZhebwS30nvTAAdbnUFS7vXjnaeWC8QXPScxUCla1Ymu5g3-Akg9cMWm8KmPgKpks3pF5fZUAh--40gBoQlSzzKcMx9Fa4HJDsrprvA1PZaz0tvz6Dk2J9cxaf3MbVNRf2YsGCttKOnKxV-N-WGQVv0MXCu001qtiuK1gxnwAjk9goSsOCdD3ZcNJ3nz-NH95YrQ_GfJ0Igmy9BszDK2p26bOG8EzUZDvzMYYt3uRoL_NVRnNmfb2GZ_ViypBGrO69QXbE488namKybqomZJwuqIFATna7G4Q5ig3HJkIPJIVbmzGzeC67n_j4eYlJHzrb_dp2Bnq56i4zQGuw4jhuMGojDzlAeEJHg3WPAudhT_KWr9jak4_bdLAsLQy_9CLb9Td6sb-ZesLkSfCN3zc8204FjKjffy43vBn9mkLXI3-rrotIaaeEqlWDQ0iFxkYFPJIl_81WIU9uSYQnEvj5fdGI3JYOzRqhSuGvbskp1TKfzpfAwUMQ7tb4GP37g-eDLqh3dDW8hiv0mjJK5xvg0l9kv3NN1wfR3t-nBUYRl-Q81F3k16CFrks";
     let msg = "Hello, world!";
