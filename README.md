@@ -1,6 +1,6 @@
 ## rust-playground
 ---
-> Same logic in smart contract environment ([Nervos](https://github.com/nervosnetwork)), see [ck-contracts-base](https://github.com/rune-box/ck-contracts-base).
+> Same logic in smart contract environment ([Nervos](https://github.com/nervosnetwork)), see [common-contracts-base](https://github.com/rune-box/common-contracts-base)
 
 | Chain / Wallet    |     Verify    |  Sign Message  |
 |-------------------|---------------|----------------|
