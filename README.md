@@ -1,4 +1,7 @@
 ## rust-playground
+
+SEE [ckb-auth](https://github.com/nervosnetwork/ckb-auth)
+
 ---
 > Same logic in smart contract environment ([Nervos](https://github.com/nervosnetwork)), see [common-contracts-base](https://github.com/rune-box/common-contracts-base)
 
